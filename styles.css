@@ -1,0 +1,845 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+body {
+  font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .9)),url(img/fondo.jpeg);
+    background-repeat: repeat; /* Repite la imagen en el fondo */
+    
+    
+}
+
+header {
+  display:flex;
+  background-color:#fa7900 ;
+  color: black;
+  padding: .1rem 0;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+  height: 85px; /* Adjust this value as needed */
+  width: 85px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    
+}
+
+nav ul li a:hover {
+    color: black; /* Tomato color */
+}
+.menu-icon {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+  padding: 1rem;
+}
+.menu-icon i {
+  color: white;
+  transition: color 0.3s;
+}
+.menu-icon i.active {
+  color: #fa7900;
+}
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  width: 50%;
+  transition: transform 0.3s ease;
+  border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+  margin: 0%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-nav.open {
+  display: flex;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  margin-top: 0;
+  width: 100px;
+  padding-top: 45px;
+  margin-top: 20px;
+   display: flex;
+  justify-content:start;
+  gap: 80px;
+  
+}
+
+.mobile-nav ul li {
+  
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  
+}
+
+.mobile-nav ul li a {
+  color:#ff6347 ;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+section {
+    padding: 1rem;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+  
+  
+#inicio {
+color: #fa7900;
+padding: 0rem 0;
+}
+
+#inicio h1 {
+    font-size:4.5rem;
+    color: #f85717d7;
+    padding-top: 8rem;
+    font-family: 'Inter', sans-serif;
+}
+
+#inicio p {
+    font-size: 1.2rem;
+    color: #f4f4f4;
+    padding: 5px 25px;
+    margin: 3%;
+    font-family: 'Inter', sans-serif;
+
+}
+.boton-blanco{
+background-color: #fa7900;
+color: #f4f4f4;
+display: inline-block;
+padding: 15px 25px;
+margin: 1%;
+font-size: 18px;
+font-weight: bold;
+border: none;
+border-radius: 25px;
+text-decoration: none;
+text-align: center;
+transition: background-color 0.3s, transform 0.3s;
+}
+
+#nosotros h1{
+  font-size: 45px;
+  color: #f85717d7;
+  font-family: 'Inter', sans-serif;
+  
+}
+
+#nosotros {
+  color: #fff;
+  padding-top: 10rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mision-vision {
+  display: flex;
+  justify-content:center;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-top:8rem;
+}
+
+.mision, .vision {
+  flex: 2;
+  padding: 1rem;
+  border-radius: 10px;
+  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mision h3, .vision h3 {
+  color: #ff6347; /* Tomato color */
+  font-size: 1.5rem;
+}
+/*#artistas {
+    background: #fff;
+}*/
+#subtitulo h2{
+  color: #ff6347;
+}
+.artista {
+    
+    margin-top: 100px;
+    ;
+    padding: 2%;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 50%;
+    
+    border-radius: 10px;
+    justify-content: space-around
+}
+
+.artista:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    
+}
+
+.artista img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+  
+}
+
+
+#artistas h2{
+  color:#ff6347
+}
+.artista h3 {
+    font-size: 1.2rem;
+    color:#ff6347 ;
+}
+
+.artista p {
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+/*#arte {
+    background: #fafafa;
+}*/
+#arte{
+      margin-top:150px;
+  }
+
+#arte h2 {
+    display:none;
+    text-align: center;
+    font-size: 2rem;
+    color: 0; /* Tomato color */
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 2% 0;
+}
+
+.redes > a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.redes > a > i {
+    color: #fff;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+#contenedor-arte {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.arte-item {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.arte-item img {
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+}
+.arte-item video {
+  
+  max-width:400px;
+  height: 350px;
+  object-fit: cover;
+}
+
+/*#contacto {
+    background: #f4f4f4;
+}
+*/
+#contacto {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+#contactenos{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(img0/bg\ \(1\).jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top: 10%;
+  
+}
+#contacto .container {
+  display:grid;
+  grid-template-columns: repeat(2,50%);
+  padding-top:19px ;
+  padding: 1px;
+  gap:10px;
+  width: 100%;
+}
+
+.box-info {
+  color:#fff;
+  display:flex;
+  flex-direction: column;
+  gap:50px;
+}
+
+.box-info > h1 {
+  text-align: left;
+  letter-spacing: 5px;
+color:#fff;
+margin-top: 0
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  gap:25px
+}
+
+.data > p {
+  font-size: 1rem;
+  align-items: start;
+}
+
+.data > p > i {
+  color:#ff6347;
+  margin-right: 10px;
+  font-size:25px;
+}
+
+
+
+.links {
+  display:flex;
+  gap:15px;
+}
+
+.links > a {
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  background:#ff6347;
+  text-align: center;
+  transition: .1s;
+}
+
+.links > a > i {
+  color:#fff;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+form {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  gap:15px;
+}
+
+.input-box {
+  position:relative;
+}
+
+.input-box > input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  outline:none;
+  background: rgba(255 255 255 / .1);
+  border:3px solid transparent;
+  letter-spacing: 1px;
+  transition:.3s;
+  color:#fff;
+  
+}
+
+.input-box > input::placeholder,
+.input-box > textarea::placeholder {
+  color:#a3a3a3;
+  
+}
+
+.input-box > input:focus::placeholder,
+.input-box > textarea:focus::placeholder {
+  color:transparent;
+}
+
+.input-box > input:focus,
+.input-box > textarea:focus {
+    border-bottom:3px solid #ff6347;
+  animation: shake .2s;
+}
+
+.input-box > textarea {
+  width: 100%;
+  height: 130px;
+  padding: 10px;
+  background: rgba(255 255 255 / .1);
+  border:3px solid transparent;
+  letter-spacing: 1px;
+  outline: none;
+  transition:.3s;
+  color:#fff;
+  letter-spacing: 1.5px;
+}
+
+
+.input-box > i {
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+  right: 10px;
+  
+  transition: .3s;
+}
+
+.input-box > input:focus ~ i {
+  color:#ff6347;
+}
+
+form > button {
+  width: 105%;
+  padding: 10px;
+  outline: none;
+  background:#ff6347;
+  color:#fff;
+  border:none;
+  transition: .1s;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+form > button:hover,
+.links > a:hover {
+  background: black;
+}
+
+#contacto p{
+  color:white;
+  text-align: justify;
+}
+
+
+#artistas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 70px 30px;
+  padding: 6%;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 90px 10px;
+  height: 10%;
+  border-radius: 10px;
+}
+
+.footer-section {
+background: black;
+margin-top: 5%;
+width: 100%;
+display: flex;
+justify-content: center;
+
+}
+.footer-content p{
+  color: #f4f4f4;
+  
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+    
+
+@media screen and (max-width: 768px) {
+  
+
+
+  .menu-icon {
+    display: block;
+    margin-left: 10%;
+    padding: 8%;
+  }
+  .menu-icon .active {
+  color: #fa7900; /* Naranja cuando el menú está abierto */}
+
+  .header-content nav {
+    display: none;
+  }
+  .logo {
+    display: flex;
+    margin-left: 60%;
+    margin-top: 0px;
+  }
+  
+  #inicio h1 {
+    margin-top: 30%;
+    font-size: 3rem;
+    padding-top: 9rem;
+  }
+  .contenedor h1{
+    font-size: 10px;
+  }
+  .mobile-nav {
+    height: 800px;
+  }
+  .mobile-nav ul {
+    
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+  }
+  #nosotros h1{
+    font-size: 3 rem;
+  }
+  .mision h3, .vision h3, .artista h3 {
+    font-size: 1.2rem;
+  }
+  .header-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .boton-blanco{
+    margin-top: 35%;
+  }
+  .mision-vision {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  #contacto .container { 
+    grid-template-columns: 100%;
+    margin-left: 1px;
+  }
+
+  form > button {
+    width: 110%;
+  }
+
+  .footer-section {
+    padding: 3px 20px;
+    text-align: center;
+  }
+
+  /* Additional rules for screens smaller than or equal to 768px */
+  .artista{
+    margin-top:  65px;
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+  .artista img {
+    width: 150px;
+    height: 150px;
+  }
+  #arte{
+      margin-top:90px;
+  }
+#arte h2 {
+    display:none;
+}
+  .arte-item img {
+    width: 200px;
+    height: 200px;
+  }
+  #contacto h1{
+    font-size: 2rem;
+    text-align:center;
+    margin-top:90px ;
+  }
+  #contacto p{
+    color:white;
+    text-align: center;
+    margin-top: 3px;
+  }
+  .links {
+    display:none;
+  }
+  #contacto .container {
+    width: 90%;
+  }
+  .floating-icon {
+            position: fixed; /* Fija el ícono en una posición */
+            bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+            right: 20px; /* Ajusta la distancia desde la parte derecha */
+            background-color: #ff6347; /* Fondo del ícono */
+            color: white; /* Color del ícono */
+            border-radius: 50%; /* Hace que el ícono sea circular */
+            padding: 12px; /* Espacio alrededor del ícono */
+            font-size: 18px; /* Tamaño del ícono */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra para dar efecto de flotante */
+            transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+        }
+        .floating-icon:hover {
+            background-color: black; /* Color de fondo al pasar el ratón por encima */
+            transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón por encima */
+        }
+  
+}
+ .contenedor-arte{
+     margin-top:10px;}
+     
+     
+@media screen and (max-width: 430px) {
+    body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.menu-icon .active {
+  color: #fa7900; /* Naranja cuando el menú está abierto */
+}
+  .menu-icon {
+    display: block;
+    margin-left: 0%;
+    padding: 8%;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .mobile-nav {
+    height: 600px;
+  }
+  .header-content nav {
+    display: none;
+}
+.logo {
+  display: flex;
+  margin-left:60% ;
+  margin-top: 0px;
+}
+#arte{
+      margin-top:90px;
+  }
+.arte-item {
+  margin: .5rem;
+  padding: .5rem;
+  border: .5px solid #ccc;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 30%;
+}
+ 
+  .artista{
+    margin-top:  65px;
+    align-items: center;
+  }
+  .artista img {
+      width: 150px;
+      height: 150px;
+  }
+ 
+ .contenedor-arte{
+     margin-top:10px;}
+     
+ 
+  .arte-item img {
+      width: 220px;
+      height: 220px;}
+
+    .arte-item video {
+  
+        max-width: 250px;
+        height: 200px;
+   }
+
+  #inicio h1 {
+    margin-top: 70px;
+        font-size: 3rem;
+        padding-top: 9rem;
+    }
+  .contenedor h1{
+    font-size: 10px;
+  }
+  .mobile-nav ul {
+      flex-direction:column;
+      width: 100%;
+    }
+    #nosotros h1{
+      font-size: 3 rem;
+    }
+  .mision h3, .vision h3, .artista h3 {
+      font-size: 1.2rem;
+  }
+  .header-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .boton-blanco{
+    margin-top: 35%;
+  }
+  .mision-vision {
+      flex-direction: column;
+      margin-top: 80px;
+  }
+
+  #contacto .container {
+      
+    grid-template-columns: 100%;
+    margin-left: 1px;
+}
+
+  form > button {
+      width: 110%;
+  }
+
+  .footer-section {
+      padding: 3px 20px;
+      text-align: center;
+  }
+
+  #arte h2 {
+    display:none;
+}
+  .artista{
+    margin-top:  65px;
+    margin-left:25px;
+    margin-right:25px;
+  }
+  .artista img {
+      width: 150px;
+      height: 150px;
+  }
+
+  .arte-item img {
+      width: 220px;
+      height: 220px;}
+
+    .arte-item video {
+  
+        max-width: 250px;
+        height: 200px;
+        
+      }
+    #contacto h1{
+      font-size: 2rem;
+      text-align:center;
+      margin-top:90px ;
+    }
+    #contacto p{
+      color:white;
+      text-align: center;
+      margin-top: 3px;
+    }
+    .links {
+      display:none;
+    }
+    #contacto .container {
+        width: 90%;
+  }
+  .floating-icon {
+            position: fixed; /* Fija el ícono en una posición */
+            bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+            right: 20px; /* Ajusta la distancia desde la parte derecha */
+            background-color: #ff6347; /* Fondo del ícono */
+            color: white; /* Color del ícono */
+            border-radius: 50%; /* Hace que el ícono sea circular */
+            padding: 12px; /* Espacio alrededor del ícono */
+            font-size: 18px; /* Tamaño del ícono */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra para dar efecto de flotante */
+            transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+        }
+        .floating-icon:hover {
+            background-color: black; /* Color de fondo al pasar el ratón por encima */
+            transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón por encima */
+        }
+}
+.floating-icon {
+            position: fixed; /* Fija el ícono en una posición */
+            bottom: 18px; /* Ajusta la distancia desde la parte inferior */
+            right: 20px; /* Ajusta la distancia desde la parte derecha */
+            background-color: #ff6347; /* Fondo del ícono */
+            color: white; /* Color del ícono */
+            border-radius: 50%; /* Hace que el ícono sea circular */
+            padding: 15px; /* Espacio alrededor del ícono */
+            font-size: 23px; /* Tamaño del ícono */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra para dar efecto de flotante */
+            transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+        }
+        .floating-icon:hover {
+            background-color: black; /* Color de fondo al pasar el ratón por encima */
+            transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón por encima */
+        }

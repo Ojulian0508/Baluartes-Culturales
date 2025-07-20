@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="arte, baluartes, cultura, vallenato,valledupar,baluartes culturales, artistas,pintura">
+    <title>Baluartes Culturales</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+       <div class="menu-icon" onclick="toggleMenu(this)">
+  <i class="fas fa-bars"></i>
+</div>
+       <nav class="mobile-nav">
+  <ul>
+    <li><a href="#inicio">INICIO</a></li>
+    <li><a href="#nosotros">NOSOTROS</a></li>
+    <li><a href="#artistas">ARTISTAS</a></li>
+    <li><a href="#contacto">CONTACTENOS</a></li>
+  </ul>
+</nav>
+        
+        <div class="header-content">
+            <div class="logo">
+                <img src="img/logobaluarte.png" alt="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#nosotros">NOSOTROS</a></li>
+                    <li><a href="#artistas">ARTISTAS</a></li>
+                    <li><a href="#contacto">CONTACTENOS</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <section id="inicio">
+        <h1>Bienvenidos a<br> Baluartes Culturales</h1>
+        <p>Descubre y apoya a los artistas locales de nuestra región.</p>
+        <a href="index.php#artistas" class="boton-blanco">Ver más</a>
+    </section>
+    
+    <section id="nosotros" class="contenedor">
+        <h1>Nosotros</h1>
+        <div class="mision-vision">
+            <div class="mision">
+                <h3>Misión</h3>
+                <p>Nuestra misión es impulsar y apoyar a los talentos artísticos de Valledupar, brindándoles una plataforma para exponer sus obras y conectarse con una audiencia más amplia.</p>
+            </div>
+            <div class="vision">
+                <h3>Visión</h3>
+                <p>Nos visionamos como el principal promotor de artistas en la región, conocido por descubrir y cultivar talentos únicos, y contribuir al enriquecimiento cultural de nuestra comunidad.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="artistas" class="art">
+        <div class="artista" onclick="location.href='artista.html?id=artista1'">
+            <img src="img/dilialogo.jpeg" alt="Artista 1">
+            <h3>Dilia Molina</h3>
+            <p>Pintora e ilustradora</p>
+            <div class="redes">
+               
+            </div>
+        </div>
+        <div class="artista" onclick="location.href='artista.html?id=artista2'">
+            <img src="img/jorgeluislogo1.png" alt="Artista 2">
+            <h3>Jorge Luis Ortiz</h3>
+            <p>Cantante</p>
+            <div class="redes">
+                
+            </div>
+        </div>
+        <div class="artista" onclick="location.href='artista.html?id=artista3'">
+            <img src="img/karollogo1.jpeg" alt="Artista 5">
+            <h3>Karol Andrade</h3>
+            <p>Pintora e ilustradora</p>
+            <div class="redes">
+                
+            </div>
+        </div>
+        <div class="artista" onclick="location.href='artista.html?id=artista4'">
+            <img src="img/logodiego2.jpeg" alt="Artista 4">
+            <h3>Diego Reyes</h3>
+            <p>Ilustrador a lápiz</p>
+            <div class="redes">
+                
+            </div>
+        </div>
+        <div class="artista" onclick="location.href='artista.html?id=artista5'">
+            <img src="img/sofialogo.jpeg" alt="Artista 5">
+            <h3>Sofia Freile</h3>
+            <p>Ilustradora digital</p>
+            <div class="redes">
+                
+            </div>
+        </div>
+        <!-- Agrega más artistas según sea necesario -->
+    </section>
+
+    <section id="contacto">
+            <div class="container">
+                <div class="box-info">
+                    <h1>CONTÁCTATE CON NOSOTROS</h1>
+                    <div class="data">
+                        <p><i class="fa-solid fa-phone"></i> 3001508657</p>
+                        <p><i class="fa-solid fa-location-dot"></i>Valledupar, Cesar</p>
+                        <p><i class="fa-brands fa-instagram"></i><a> @baluartesculturales</a></p>
+                        <p><i class="fa-solid fa-envelope"></i>baluartescultulturales@gmail.com</p>
+                    
+                        
+                    </div>
+                   
+                </div>
+                
+                <form action="#" method="post">
+                    <div class="input-box">
+                        <input type="text" name="name" id="name" placeholder="Nombre y apellido" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="mail" id="mail" required placeholder="Correo electrónico">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="asunto" id="asunto" placeholder="Asunto">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <div class="input-box">
+                        <textarea name="message" id="message" placeholder="Escribe tu mensaje..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" name="btn-primary">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+    <a href="https://www.instagram.com/baluartesculturales" target="_blank" class="floating-icon">
+    <i class="fa-brands fa-instagram"></i>
+    </a>
+</body>
+<footer class="footer-section">
+    <div class="footer-content">
+        <p>&copy; 2024 Baluartes Culturales. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</html>
+
